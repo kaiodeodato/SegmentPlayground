@@ -54,7 +54,7 @@ function sendFormData() {
         "message": message
     };
 
-    fetch('https://api.segmentapis.com/functions/webhook?n=zqade9ng9bfhtoulh4fzd57plzqf6nka3&s=UJYL_6j4&t=1715638237&w=gqXK9gN76UEez4nMFmXcYh', {
+    fetch('https://fn.segmentapis.com/?b=N0VNd29zV0NQV3JraURiUmNGU3l3bzo6RjFZenNISXBOTEpOdmhBeVdsVjEwM0tCbEV3NWVlaVE=', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
