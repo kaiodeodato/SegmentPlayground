@@ -14,8 +14,7 @@ function trackNavLinks(link){
 }
 
 function trackSendMessage(e) {
-    e.preventDefault();
-    
+    e.preventDefault()
     console.log("Form Sent!");
 
     var form = e.target;
