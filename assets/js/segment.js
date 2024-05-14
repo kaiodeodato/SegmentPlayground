@@ -41,35 +41,3 @@ function trackSendMessage(e) {
 
 
 
-function sendFormData() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("comment").value;
-
-    var formData = {
-        "name": name,
-        "email": email,
-        "subject": subject,
-        "message": message
-    };
-
-    fetch('https://fn.segmentapis.com/?b=N0VNd29zV0NQV3JraURiUmNGU3l3bzo6RjFZenNISXBOTEpOdmhBeVdsVjEwM0tCbEV3NWVlaVE=', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => {
-        if (response.ok) {
-            alert("Formulário enviado com sucesso!");
-        } else {
-            alert("Erro ao enviar formulário. Por favor, tente novamente.");
-        }
-    })
-    .catch(error => {
-        alert("Erro ao enviar formulário. Por favor, tente novamente.");
-        console.error('Erro:', error);
-    });
-}
